@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lírios Dolls</title>
   <link rel="stylesheet" href="Css/style.css">
   <link rel="icon" href="img/Lirios icon 2.jpeg" type="icon">
+
+  <!-- Link para o Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Link para os ícones do Bootstrap (se necessário) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
+
 <body>
 
   <!-- Cabeçalho e Menu -->
@@ -14,9 +22,9 @@
     <nav class="navbar">
       <img src="img/Lirios icon 2.jpeg" alt="Lírios Dolls Logo" class="logo">
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="contato.html">Contato</a></li>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
       <div class="menu-buttons">
         <button class="btn-login">Login</button>
@@ -25,64 +33,126 @@
     </nav>
   </header>
 
-  <div class="banner">
+  <!-- Banner -->
+  <div class="banner" id="home">
     <div class="banner-overlay">
-        <h1>Bem-vindo ao Lírios Dolls</h1>
-        <p>Representatividade e inclusão em cada detalhe</p>
-        <button class="saiba-mais-btn">Saiba Mais</button>
+      <h1>Bem-vindo ao Lírios Dolls</h1>
+      <p>Representatividade e inclusão em cada detalhe</p>
+      <button class="saiba-mais-btn">Saiba Mais</button>
     </div>
-</div>
+  </div>
 
 
   <!-- Galeria de Bonecas -->
-  <section class="catalogo">
+  <section class="catalogo" id="sobre">
 
-    <section class="descricao-bonecas">
-  <h2>Nossas Bonecas</h2>
-  <p>Explore nosso catálogo de bonecas que celebram a diversidade e inclusão. Cada boneca é cuidadosamente feita para representar diferentes culturas e estilos de vida, com carinho em cada detalhe.</p>
-</section>
+    <section class="catalogo">
+      <section class="descricao-bonecas">
+        <h2>Nossas Bonecas</h2>
+        <p>Explore nosso catálogo de bonecas que celebram a diversidade e inclusão. Cada boneca é cuidadosamente feita
+          para representar diferentes culturas e estilos de vida, com carinho em cada detalhe.</p>
+      </section>
+      
+      <div class="catalogo-container">
+        <div class="item boneca1">
+          <img src="img/boneca-foto.jpeg" alt="Boneca 1">
+          <div class="info">
+            <h3><i class="bi bi-flower1"></i> Boneca A</h3>
+            <p>Descrição breve da Boneca A e suas características únicas.</p>
+            <button class="btn-comprar">Quero Comprar</button>
+          </div>
+        </div>
+        <div class="item boneca2">
+          <img src="img/boneca-foto2.jfif" alt="Boneca 2">
+          <div class="info">
+            <h3><i class="bi bi-flower1"></i> Boneca B</h3>
+            <p>Descrição breve da Boneca B e suas características únicas.</p>
+            <button class="btn-comprar">Quero Comprar</button>
+          </div>
+        </div>
+        <div class="item boneca3">
+          <img src="img/boneca-foto3.jfif" alt="Boneca 3">
+          <div class="info">
+            <h3><i class="bi bi-flower1"></i> Boneca C</h3>
+            <p>Descrição breve da Boneca C e suas características únicas.</p>
+            <button class="btn-comprar">Quero Comprar</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Galeria de Bonecas -->
-<section class="catalogo">
-  <h2>Lírios Dolls</h2>
-  <div class="catalogo-container">
-    <div class="item boneca1">
-      <img src="img/boneca-foto.jpeg" alt="Boneca 1">
-      <div class="info">
-        <h3><i class="bi bi-flower1"></i> Boneca A</h3>
-        <p>Descrição breve da Boneca A e suas características únicas.</p>
-        <button class="btn-comprar">Quero Comprar</button>
+    <!-- carousel -->
+
+    <h1> Em breve na nossa loja </h1>
+
+     <!-- Carrossel com 3 imagens visíveis -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-row">
+          <img src="img/carrosel1.jfif" class="d-block" alt="Boneca A">
+          <img src="img/carrosel2.jpeg" class="d-block" alt="Boneca B">
+          <img src="img/carrosel3.jpeg" class="d-block" alt="Boneca C">
+        </div>
+      </div>
+      <!-- Coloque mais itens conforme necessário -->
+      <div class="carousel-item">
+        <div class="carousel-row">
+          <img src="img/boneca-foto.jpeg" class="d-block" alt="Boneca A">
+          <img src="img/carrosel4.jpeg" class="d-block" alt="Boneca B">
+          <img src="img/carrosel5.jpeg" class="d-block" alt="Boneca C">
+        </div>
       </div>
     </div>
-    <div class="item boneca2">
-      <img src="img/boneca-foto2.jpeg" alt="Boneca 2">
-      <div class="info">
-        <h3><i class="bi bi-flower1"></i> Boneca B</h3>
-        <p>Descrição breve da Boneca B e suas características únicas.</p>
-        <button class="btn-comprar">Quero Comprar</button>
-      </div>
-    </div>
-    <div class="item boneca3">
-      <img src="img/boneca-foto3.jpeg" alt="Boneca 3">
-      <div class="info">
-        <h3><i class="bi bi-flower1"></i> Boneca C</h3>
-        <p>Descrição breve da Boneca C e suas características únicas.</p>
-        <button class="btn-comprar">Quero Comprar</button>
-      </div>
-    </div>
+    <!-- Controles do Carrossel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-</section>
+
+  <!-- Informações -->
+  <section class="informacoes">
+    <h2>Por que escolher Lírios Dolls?</h2>
+    <p>Oferecemos bonecas que celebram a diversidade, representando várias culturas, características físicas e estilos únicos. Cada boneca conta uma história, incentivando inclusão e empatia desde a infância.</p>
+    <div class="informacoes-container">
+      <div class="item-info">
+        <i class="bi bi-people-fill"></i>
+        <h3>Representatividade</h3>
+        <p>Bonecas que representam diferentes culturas, etnias e pessoas com deficiências.</p>
+      </div>
+      <div class="item-info">
+        <i class="bi bi-heart-fill"></i>
+        <h3>Qualidade e Segurança</h3>
+        <p>Fabricadas com materiais seguros e de alta qualidade, garantimos a segurança de cada criança.</p>
+      </div>
+      <div class="item-info">
+        <i class="bi bi-gift-fill"></i>
+        <h3>Presentes Especiais</h3>
+        <p>Opções de presente para diversas idades e preferências, com embalagens temáticas e personalizadas.</p>
+      </div>
+    </div>
+  </section>
+  
+
+    <!-- Rodapé -->
+    <footer id="contato">
+      <a href="https://www.instagram.com/liriosdolls_ofc/profilecard/?igsh=MWR4dmJwdnV2amhhYw==" target="_blank">
+        <i class="bi bi-instagram"></i> Instagram
+      </a>
+      <p>&copy; Lírios Dolls 2024. Todos os direitos reservados.</p>
+    </footer>
 
 
 
+    <!-- Script do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Js/script.js"></script>
 
-  <!-- Rodapé -->
-  <footer>
-    <p>&copy; Lírios Dolls 2024. Todos os direitos reservados.</p>
-    <a href="https://www.instagram.com/liriosdolls" target="_blank">
-      <i class="bi bi-instagram"></i> Instagram
-    </a>
-  </footer>
-<script src="Js/script.js"></script>
 </body>
+
 </html>
