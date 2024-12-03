@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Parkinsans:wght@300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Parkinsans:wght@300..800&display=swap');
+
+
 /* Reset */
 * {
     margin: 0;
@@ -8,7 +15,7 @@
   /* Estilo Geral */
   body {
     font-family: Arial, sans-serif;
-    background-color: #fff;
+    background-color: #ffffff;
     color: #333;
   }
   
@@ -36,10 +43,11 @@ body {
   flex-direction: column; /* Coloca os itens verticalmente */
 }
 
+
+
 /* Logo */
 .logo {
   position: absolute;
-  left: 2em;
   width: 50px;
   height: 50px;
   background-size: cover;
@@ -52,6 +60,8 @@ body {
   display: flex;
   gap: 2em;
   list-style: none;
+  margin-top: 15px;
+  margin-right: 80%;
 }
 
 .nav-links li a {
@@ -89,6 +99,7 @@ body {
   gap: 1em;
   position: absolute;
   right: 2em;
+  margin-top: 12px;
 }
 
 .menu-buttons .btn-login,
@@ -126,10 +137,10 @@ body {
   position: relative;
   width: 100%;
   height: 400px;
-  background-image: url(../img/banner.jpg); /* Imagem de fundo estática */
+  background-image: url(../img/crianças.jpg); /* Imagem de fundo estática */
   background-size: cover;
   background-position: center;
-  box-shadow: 0 4px 15px rgba(138, 43, 226, 0.4); /* Sombra ao redor do banner */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.343); /* Sombra ao redor do banner */
   overflow: hidden;
 }
 
@@ -144,31 +155,33 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Fundo preto semi-transparente */
+  background-color: rgba(0, 0, 0, 0.296); /* Fundo preto semi-transparente */
   color: #fff;
   text-align: center;
   padding: 20px;
 }
 
 .banner-overlay h1 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
+  font-size: 4.2rem;
+  margin-right: 900px;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .banner-overlay p {
   font-size: 1.2em;
-  margin-bottom: 1em;
+  margin-right: 800px;
 }
 
 .saiba-mais-btn {
   padding: 0.5em 1.5em;
   font-size: 1em;
   border: none;
-  border-radius: 5px;
-  background-color: #6A0DAD; /* Cor roxa do botão */
+  border-radius: 30px;
+  background-color: #a44cd3; /* Cor roxa do botão */
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin-right: 900px;
 }
 
 .saiba-mais-btn:hover {
@@ -263,21 +276,23 @@ body {
 /* Estilo da Seção Catalogo */
 .catalogo {
   text-align: center;
-  margin: 90px auto; /* Margem superior e inferior */
+  margin: 10px auto; /* Margem superior e inferior */
 }
 
 /* Container do catálogo */
 
 .catalogo h2 {
-  font-size: 2.5em;
+  font-size: 3rem;
   color: #470675;
   margin-bottom: 0.5em;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .catalogo p {
   font-size: 1.2em;
   color: #4a4a4a;
   margin-bottom: 1.5em;
+  font-family: "Parkinsans", sans-serif;
 }
 
 .catalogo-container {
@@ -289,15 +304,24 @@ body {
   margin: 0 auto; /* Centraliza o container */
 }
 
+.titulo {
+  font-family: "Bebas Neue", sans-serif;
+  color: #470675;
+  font-size: 42PX;
+}
+
+
+
 /* Estilo do item */
 .item {
-  background: white;
+  background: #c0a9c8;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
   overflow: hidden; /* Oculta partes que saem do cartão */
   text-align: center;
   width: 250px; /* Largura fixa para os cartões */
   transition: transform 0.2s; /* Transição suave para o efeito de hover */
+  margin-top: -50px;
 }
 
 .item:hover {
@@ -318,19 +342,19 @@ body {
 
 .info h3 {
   font-size: 1.5em;
-  color: #470675;
+  color: #54386c;
 }
 
 .info p {
   font-size: 1em;
-  color: #4a4a4a;
+  color: #664e79;
   margin: 10px 0; /* Margem acima e abaixo do texto */
 }
 
 /* Botão de comprar */
 .btn-comprar {
   background-color: #6A0DAD; /* Cor do botão */
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -347,7 +371,7 @@ body {
   
   /* Rodapé */
   footer {
-    background-color: #f5f5f5;
+    background-color: #e6e6e6;
     padding: 10px 20px;
     text-align: center;
   }
